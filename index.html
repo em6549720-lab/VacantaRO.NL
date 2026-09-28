@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VacantaRo — Vacanțe pentru românii din Olanda</title>
+<meta name="description" content="Descoperă vacanțe și inspirație pentru românii din Olanda.">
+<style>
+:root{--blue:#0878f9;--cyan:#19c6ff;--dark:#10213b;--muted:#687891;--bg:#f5f8fc;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--dark);background:var(--bg)}
+a{text-decoration:none;color:inherit}
+.hero{min-height:680px;color:#fff;background:linear-gradient(120deg,rgba(4,33,76,.92),rgba(0,117,224,.48)),url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=85") center/cover;position:relative}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between;max-width:1180px;margin:auto;padding:0 22px}
+.logo{font-size:29px;font-weight:900;letter-spacing:-1px}.logo span{color:#7ee7ff}
+.links{display:flex;gap:28px;font-weight:700}.links a:hover{color:#7ee7ff}
+.hero-content{max-width:1180px;margin:105px auto 0;padding:0 22px}.tag{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:9px 14px;border-radius:30px;font-weight:700;backdrop-filter:blur(8px)}
+h1{font-size:64px;line-height:1.03;max-width:760px;margin:22px 0 18px;letter-spacing:-2px}.hero p{font-size:20px;max-width:640px;line-height:1.6;color:#eef7ff}
+.cta{display:inline-flex;background:#fff;color:#076ce4;padding:16px 24px;border-radius:14px;font-weight:900;margin-top:12px;box-shadow:0 12px 30px #001d4533}
+.search{max-width:1000px;margin:-52px auto 0;position:relative;z-index:3;background:#fff;border-radius:22px;padding:18px;box-shadow:0 18px 55px #15335c22;display:grid;grid-template-columns:1.2fr 1fr 1fr auto;gap:12px}
+.field{padding:14px 16px;border:1px solid #e1e8f2;border-radius:13px}.field small{display:block;color:var(--muted);font-size:11px;font-weight:800;text-transform:uppercase}.field strong{display:block;margin-top:4px}.search button{border:0;background:var(--blue);color:#fff;border-radius:13px;padding:0 24px;font-weight:900;font-size:15px}
+.wrap{max-width:1180px;margin:auto;padding:75px 22px}.eyebrow{color:var(--blue);font-weight:900;text-transform:uppercase;font-size:13px;letter-spacing:1.2px}.title{font-size:39px;margin:8px 0 30px;letter-spacing:-1px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.dest{height:245px;border-radius:22px;overflow:hidden;position:relative;color:#fff;background-size:cover;background-position:center;box-shadow:0 10px 30px #15335c14}.dest:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.78))}
+.dest div{position:absolute;z-index:1;bottom:20px;left:20px}.dest h3{font-size:25px;margin:0 0 4px}.dest p{margin:0;opacity:.9}
+.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.offer{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 10px 30px #15335c14}.photo{height:180px;background-size:cover;background-position:center}.offer-body{padding:20px}.badge{display:inline-block;background:#e9f7ff;color:#0878f9;border-radius:20px;padding:6px 10px;font-size:12px;font-weight:900}.offer h3{margin:13px 0 6px;font-size:21px}.meta{color:var(--muted);font-size:14px}.offer-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:18px}.price{font-size:23px;font-weight:900}.view{background:var(--blue);color:#fff;padding:11px 15px;border-radius:10px;font-weight:800}
+.how{background:#0d2442;color:#fff}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.step{background:#163456;border-radius:20px;padding:25px}.num{font-size:30px;font-weight:900;color:#76e3ff}.step h3{margin:12px 0 7px}.step p{color:#c8d7e8;line-height:1.55}
+footer{background:#08172b;color:#aebed2;padding:38px 22px;text-align:center}.footer-logo{font-size:25px;font-weight:900;color:#fff;margin-bottom:10px}
+@media(max-width:850px){h1{font-size:45px}.links{display:none}.search{grid-template-columns:1fr 1fr}.search button{padding:14px}.grid{grid-template-columns:1fr 1fr}.offers{grid-template-columns:1fr}.steps{grid-template-columns:1fr}}
+@media(max-width:520px){h1{font-size:38px}.hero{min-height:620px}.hero-content{margin-top:75px}.search{margin: -35px 15px 0;grid-template-columns:1fr}.grid{grid-template-columns:1fr}.wrap{padding:55px 18px}}
+</style>
+</head>
+<body>
+<header class="hero">
+<nav><div class="logo">✈️ Vacanta<span>Ro</span></div><div class="links"><a href="#destinatii">Destinații</a><a href="#oferte">Oferte</a><a href="#cum">Cum funcționează</a></div></nav>
+<div class="hero-content">
+<div class="tag">🇷🇴 Pentru românii din Olanda 🇳🇱</div>
+<h1>Următoarea ta vacanță începe aici.</h1>
+<p>Inspiră-te, descoperă destinații superbe și găsește oferte pentru vacanța ta, cu plecări din Olanda.</p>
+<a class="cta" href="#oferte">Descoperă ofertele →</a>
+</div>
+</header>
+
+<div class="search">
+<div class="field"><small>Unde vrei să mergi?</small><strong>🌴 Antalya, Grecia, Dubai...</strong></div>
+<div class="field"><small>Plecare</small><strong>✈️ Amsterdam</strong></div>
+<div class="field"><small>Tip vacanță</small><strong>🏖️ All Inclusive</strong></div>
+<button onclick="document.querySelector('#oferte').scrollIntoView()">Caută vacanță</button>
+</div>
+
+<section class="wrap" id="destinatii">
+<div class="eyebrow">Alege destinația</div><h2 class="title">Locuri care merită descoperite</h2>
+<div class="grid">
+<a class="dest" style="background-image:url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=900&q=80')" href="#oferte"><div><h3>🇹🇷 Antalya</h3><p>Plajă • All Inclusive</p></div></a>
+<a class="dest" style="background-image:url('https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?auto=format&fit=crop&w=900&q=80')" href="#oferte"><div><h3>🇬🇷 Grecia</h3><p>Mare • Insule</p></div></a>
+<a class="dest" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80')" href="#oferte"><div><h3>🇦🇪 Dubai</h3><p>Lux • City break</p></div></a>
+<a class="dest" style="background-image:url('https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=900&q=80')" href="#oferte"><div><h3>🇪🇬 Egipt</h3><p>Soare • Resorturi</p></div></a>
+</div>
+</section>
+
+<section class="wrap" id="oferte">
+<div class="eyebrow">Oferte</div><h2 class="title">Idei pentru următoarea vacanță</h2>
+<div class="offers">
+<article class="offer"><div class="photo" style="background-image:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80')"></div><div class="offer-body"><span class="badge">ALL INCLUSIVE</span><h3>Antalya • 7 nopți</h3><div class="meta">✈️ Plecare din Amsterdam • 2 persoane</div><div class="offer-bottom"><span class="price">Vezi prețul</span><a class="view" href="#" onclick="alert('Aici vom adăuga linkul tău Booking.com după aprobarea afilierii.');return false">Vezi oferta</a></div></div></article>
+<article class="offer"><div class="photo" style="background-image:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1000&q=80')"></div><div class="offer-body"><span class="badge">PLAJĂ</span><h3>Grecia • 7 nopți</h3><div class="meta">✈️ Plecare din Olanda • 2 persoane</div><div class="offer-bottom"><span class="price">Vezi prețul</span><a class="view" href="#" onclick="alert('Aici vom adăuga linkul tău Booking.com după aprobarea afilierii.');return false">Vezi oferta</a></div></div></article>
+<article class="offer"><div class="photo" style="background-image:url('https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1000&q=80')"></div><div class="offer-body"><span class="badge">CITY & BEACH</span><h3>Dubai • 5 nopți</h3><div class="meta">✈️ Plecare din Amsterdam • 2 persoane</div><div class="offer-bottom"><span class="price">Vezi prețul</span><a class="view" href="#" onclick="alert('Aici vom adăuga linkul tău Booking.com după aprobarea afilierii.');return false">Vezi oferta</a></div></div></article>
+</div>
+</section>
+
+<section class="how" id="cum"><div class="wrap"><div class="eyebrow" style="color:#76e3ff">Simplu</div><h2 class="title" style="color:#fff">Cum funcționează VacantaRo?</h2><div class="steps">
+<div class="step"><div class="num">01</div><h3>Alegi destinația</h3><p>Descoperi destinații și idei de vacanță potrivite pentru plecări din Olanda.</p></div>
+<div class="step"><div class="num">02</div><h3>Vezi oferta</h3><p>Compari informațiile și alegi oferta care te interesează.</p></div>
+<div class="step"><div class="num">03</div><h3>Rezervi la partener</h3><p>Te trimitem către partenerul de rezervare. După aprobarea afilierii, vom folosi linkuri de afiliat.</p></div>
+</div></div></section>
+<footer><div class="footer-logo">✈️ VacantaRo</div><div>Vacanțe pentru românii din Olanda</div><div style="margin-top:15px;font-size:13px">© 2026 VacantaRo.nl</div></footer>
+</body></html>
