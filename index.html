@@ -6,383 +6,416 @@
 
 <title>VacantaRO.NL – Vacanțe pentru românii din Olanda</title>
 
-<meta name="description" content="Vacanțe, hoteluri, zboruri și oferte pentru românii din Olanda.">
+<meta name="description" content="Hoteluri, vacanțe și inspirație pentru românii din Olanda.">
 
 <style>
+
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#f5f7fb;
-  color:#172033;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f7fb;
+    color:#172033;
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+    text-decoration:none;
+    color:inherit;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
+
 header{
-  background:#071b35;
-  color:white;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  box-shadow:0 3px 15px rgba(0,0,0,.15);
+    background:#071b35;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.18);
 }
 
 nav{
-  max-width:1180px;
-  margin:auto;
-  height:72px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:0 20px;
+    max-width:1180px;
+    height:72px;
+    margin:auto;
+    padding:0 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
-  font-size:25px;
-  font-weight:900;
-  letter-spacing:-1px;
+    font-size:25px;
+    font-weight:900;
 }
 
 .logo span{
-  color:#20c6ff;
+    color:#20c6ff;
 }
 
 .navlinks{
-  display:flex;
-  gap:28px;
-  font-weight:700;
+    display:flex;
+    gap:28px;
+    font-weight:bold;
 }
 
 .navlinks a:hover{
-  color:#20c6ff;
+    color:#20c6ff;
 }
 
-/* HERO */
+/* ================= BOOKING ================= */
+
+.booking-area{
+    background:#f5f7fb;
+    padding:30px 15px 35px;
+}
+
+.booking-title{
+    max-width:1100px;
+    margin:0 auto 18px;
+    text-align:center;
+}
+
+.booking-title h2{
+    font-size:30px;
+    margin-bottom:7px;
+    color:#172033;
+}
+
+.booking-title p{
+    color:#667085;
+    font-size:16px;
+}
+
+/* ================= HERO ================= */
+
 .hero{
-  min-height:650px;
-  color:white;
-  background:
-    linear-gradient(90deg,rgba(4,22,45,.88),rgba(4,22,45,.55)),
-    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80");
-  background-size:cover;
-  background-position:center;
+    min-height:600px;
+    color:white;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(4,22,45,.90),
+        rgba(4,22,45,.50)
+    ),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+    background-position:center;
 }
 
 .hero-content{
-  max-width:1180px;
-  margin:auto;
-  padding:105px 20px 80px;
+    max-width:1180px;
+    margin:auto;
+    padding:110px 20px 80px;
 }
 
 .badge{
-  display:inline-block;
-  background:#20c6ff;
-  color:#071b35;
-  padding:9px 16px;
-  border-radius:30px;
-  font-weight:bold;
-  margin-bottom:20px;
+    display:inline-block;
+    background:#20c6ff;
+    color:#071b35;
+    padding:10px 17px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:22px;
 }
 
-h1{
-  font-size:58px;
-  line-height:1.05;
-  max-width:800px;
-  margin-bottom:22px;
+.hero h1{
+    font-size:58px;
+    line-height:1.05;
+    max-width:800px;
+    margin-bottom:25px;
 }
 
 .hero p{
-  font-size:20px;
-  line-height:1.6;
-  max-width:650px;
-  color:#e7f4ff;
+    font-size:20px;
+    line-height:1.6;
+    max-width:650px;
+    color:#e8f5ff;
 }
 
-/* SEARCH */
-.search{
-  max-width:1050px;
-  margin:-55px auto 0;
-  background:white;
-  padding:22px;
-  border-radius:20px;
-  box-shadow:0 15px 40px rgba(0,0,0,.15);
-  position:relative;
-  z-index:5;
-}
+/* ================= GENERAL ================= */
 
-.search h2{
-  margin-bottom:15px;
-}
-
-.search-row{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr auto;
-  gap:12px;
-}
-
-.field{
-  padding:15px;
-  border:1px solid #dce2ea;
-  border-radius:12px;
-  font-size:15px;
-  width:100%;
-}
-
-.btn{
-  border:0;
-  border-radius:12px;
-  padding:15px 22px;
-  font-weight:bold;
-  cursor:pointer;
-  background:#0878f9;
-  color:white;
-}
-
-.btn:hover{
-  background:#055dc2;
-}
-
-/* GENERAL */
 .wrap{
-  max-width:1180px;
-  margin:auto;
-  padding:75px 20px;
+    max-width:1180px;
+    margin:auto;
+    padding:75px 20px;
 }
 
 .eyebrow{
-  color:#0878f9;
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:1px;
-  margin-bottom:8px;
+    color:#0878f9;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:8px;
 }
 
 .section-title{
-  font-size:38px;
-  margin-bottom:35px;
+    font-size:38px;
+    margin-bottom:35px;
 }
 
-/* OFFERS */
+/* ================= DESTINATII ================= */
+
 .offers{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
 }
 
 .offer{
-  background:white;
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 8px 25px rgba(0,0,0,.08);
-  transition:.25s;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.25s;
 }
 
 .offer:hover{
-  transform:translateY(-5px);
-  box-shadow:0 14px 35px rgba(0,0,0,.14);
+    transform:translateY(-5px);
 }
 
 .photo{
-  height:210px;
-  background-size:cover;
-  background-position:center;
+    height:220px;
+    background-size:cover;
+    background-position:center;
 }
 
 .offer-body{
-  padding:22px;
+    padding:22px;
 }
 
 .offer h3{
-  font-size:22px;
-  margin-bottom:10px;
+    font-size:23px;
+    margin-bottom:10px;
 }
 
 .offer p{
-  color:#657084;
-  line-height:1.5;
-  margin-bottom:18px;
+    color:#657084;
+    line-height:1.5;
+    margin-bottom:18px;
 }
 
-.price{
-  font-size:24px;
-  font-weight:900;
-  color:#0878f9;
-  margin-bottom:15px;
+.btn{
+    display:inline-block;
+    border:0;
+    border-radius:12px;
+    padding:13px 20px;
+    background:#0878f9;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
 }
 
-/* CATEGORIES */
+.btn:hover{
+    background:#055dc2;
+}
+
+/* ================= CATEGORII ================= */
+
 .categories{
-  background:#eaf5ff;
+    background:#eaf5ff;
 }
 
 .category-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
 }
 
 .category{
-  background:white;
-  padding:28px 20px;
-  text-align:center;
-  border-radius:18px;
-  font-size:18px;
-  font-weight:bold;
-  box-shadow:0 5px 18px rgba(0,0,0,.06);
+    background:white;
+    padding:30px 20px;
+    text-align:center;
+    border-radius:18px;
+    font-size:18px;
+    font-weight:bold;
+    box-shadow:0 5px 18px rgba(0,0,0,.06);
 }
 
 .icon{
-  font-size:40px;
-  margin-bottom:12px;
+    font-size:42px;
+    margin-bottom:13px;
 }
 
-/* HOW */
+/* ================= CUM FUNCTIONEAZA ================= */
+
 .how{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
 .step{
-  background:white;
-  padding:30px;
-  border-radius:18px;
-  box-shadow:0 5px 20px rgba(0,0,0,.07);
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
 }
 
 .num{
-  width:45px;
-  height:45px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:#0878f9;
-  color:white;
-  border-radius:50%;
-  font-weight:bold;
-  margin-bottom:18px;
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#0878f9;
+    color:white;
+    border-radius:50%;
+    font-weight:bold;
+    margin-bottom:18px;
 }
 
-/* CTA */
+.step h3{
+    margin-bottom:12px;
+}
+
+.step p{
+    color:#657084;
+    line-height:1.5;
+}
+
+/* ================= CTA ================= */
+
+.cta-section{
+    padding:30px 20px 75px;
+}
+
 .cta{
-  background:linear-gradient(135deg,#0878f9,#19c6ff);
-  color:white;
-  border-radius:25px;
-  padding:55px;
-  text-align:center;
+    max-width:1140px;
+    margin:auto;
+    background:linear-gradient(135deg,#0878f9,#19c6ff);
+    color:white;
+    border-radius:25px;
+    padding:55px;
+    text-align:center;
 }
 
 .cta h2{
-  font-size:38px;
-  margin-bottom:15px;
+    font-size:38px;
+    margin-bottom:15px;
 }
 
 .cta p{
-  font-size:18px;
-  margin-bottom:25px;
+    font-size:18px;
+    margin-bottom:25px;
 }
 
 .white-btn{
-  background:white;
-  color:#0878f9;
-  display:inline-block;
-  padding:15px 25px;
-  border-radius:12px;
-  font-weight:bold;
+    display:inline-block;
+    background:white;
+    color:#0878f9;
+    padding:15px 25px;
+    border-radius:12px;
+    font-weight:bold;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
+
 footer{
-  background:#071b35;
-  color:#b9c8d9;
-  padding:45px 20px;
-  text-align:center;
+    background:#071b35;
+    color:#b9c8d9;
+    padding:45px 20px;
+    text-align:center;
 }
 
 footer strong{
-  color:white;
-  font-size:22px;
+    color:white;
+    font-size:22px;
 }
 
 footer p{
-  margin-top:12px;
+    margin-top:12px;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
+
 @media(max-width:850px){
 
-  .navlinks{
-    display:none;
-  }
+    nav{
+        height:65px;
+    }
 
-  h1{
-    font-size:40px;
-  }
+    .navlinks{
+        display:none;
+    }
 
-  .hero-content{
-    padding-top:80px;
-  }
+    .logo{
+        font-size:22px;
+    }
 
-  .search-row{
-    grid-template-columns:1fr;
-  }
+    .booking-area{
+        padding:20px 8px 25px;
+    }
 
-  .offers{
-    grid-template-columns:1fr;
-  }
+    .booking-title h2{
+        font-size:25px;
+    }
 
-  .category-grid{
-    grid-template-columns:1fr 1fr;
-  }
+    .hero{
+        min-height:520px;
+    }
 
-  .how{
-    grid-template-columns:1fr;
-  }
+    .hero-content{
+        padding:75px 20px;
+    }
 
-  .section-title{
-    font-size:30px;
-  }
+    .hero h1{
+        font-size:40px;
+    }
 
-  .cta{
-    padding:35px 20px;
- iframeSettings": {
-    "selector": "bookingAffiliateWidget_9afaba33-a14f-401d-bfb3-83611e96d760",
-    "responsive": true
-  },
-  "widgetSettings": {
-"destinationurloverride": "http://www.jdoqocy.com/click-101892598-17319656?sid="
+    .hero p{
+        font-size:17px;
+    }
+
+    .offers{
+        grid-template-columns:1fr;
+    }
+
+    .category-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .how{
+        grid-template-columns:1fr;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    .cta{
+        padding:35px 20px;
+    }
+
+    .cta h2{
+        font-size:30px;
+    }
 }
-});
-      })();
-  </script><img src="https://www.ftjcfx.com/image-101892598-17319656" width="1" height="1" border="0"/>
-  <!-- SECTIUNE HOTELURI VACANTARO.NL --> }
 
-  .cta h2{
-    font-size:30px;
-  }
-}
 </style>
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
+
 <header>
+
 <nav>
 
-<a href="#" class="logo">✈️ Vacanta<span>RO</span>.NL</a>
+<a href="#" class="logo">
+✈️ Vacanta<span>RO</span>.NL
+</a>
 
 <div class="navlinks">
 <a href="#oferte">Oferte</a>
@@ -391,164 +424,111 @@ footer p{
 </div>
 
 </nav>
+
 </header>
 
+
+<!-- ================= BOOKING - PRIMUL PE PAGINA ================= -->
+
+<section class="booking-area">
+
+<div class="booking-title">
+
+<h2>🏨 Căutați-vă următorul sejur</h2>
+
+<p>
+Alegeți dintre milioane de locuințe, hoteluri și alte tipuri de proprietăți din toată lumea
+</p>
+
+</div>
+
+<script src="https://www.booking.com/affiliate/prelanding_sdk"></script>
+
+<div id="bookingAffiliateWidget_9afaba33-a14f-401d-bfb3-83611e96d760">
+&nbsp;
+</div>
+
+<script>
+
+(function () {
+
+var BookingAffiliateWidget =
+new Booking.AffiliateWidget({
+
+"iframeSettings": {
+
+"selector":
+"bookingAffiliateWidget_9afaba33-a14f-401d-bfb3-83611e96d760",
+
+"responsive":true
+
+},
+
+"widgetSettings": {
+
+"destinationurloverride":
+"http://www.jdoqocy.com/click-101892598-17319656?sid="
+
+}
+
+});
+
+})();
+
+</script>
+
+<img
+src="https://www.ftjcfx.com/image-101892598-17319656"
+width="1"
+height="1"
+border="0"
+alt=""
+>
+
+</section>
+
+
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
 <div class="hero-content">
 
-<div class="badge">🇷🇴 Pentru românii din Olanda 🇳🇱</div>
+<div class="badge">
+🇷🇴 Pentru românii din Olanda 🇳🇱
+</div>
 
-<h1>Următoarea ta vacanță începe aici.</h1>
+<h1>
+Următoarea ta vacanță începe aici.
+</h1>
 
 <p>
 Descoperă hoteluri, zboruri și idei de vacanță
-pentru românii din Olanda. Căutăm inspirația,
-tu alegi destinația.
+pentru românii din Olanda.
+Căutăm inspirația, tu alegi destinația.
 </p>
+
 </div>
+
 </section>
-<section style="padding:50px 20px;background:#f8f8fb;">
-  <div style="max-width:1100px;margin:auto;text-align:center;">
 
-    <h2 style="font-size:32px;margin-bottom:10px;color:#222;">
-      🏨 Caută hoteluri
-    </h2>
 
-    <p style="color:#666;margin-bottom:30px;">
-      Găsește cazare pentru următoarea ta vacanță
-    </p>
-
-    <div style="background:white;padding:20px;border-radius:18px;
-                box-shadow:0 5px 25px rgba(0,0,0,.08);
-                display:flex;gap:12px;flex-wrap:wrap;
-                justify-content:center;">
-
-      <input type="text" placeholder="📍 Unde mergi?"
-        style="padding:15px;border:1px solid #ddd;border-radius:10px;
-        flex:1;min-width:180px;font-size:15px;">
-
-      <input type="date"
-        style="padding:15px;border:1px solid #ddd;border-radius:10px;
-        min-width:150px;font-size:15px;">
-
-      <input type="date"
-        style="padding:15px;border:1px solid #ddd;border-radius:10px;
-        min-width:150px;font-size:15px;">
-
-      <select
-        style="padding:15px;border:1px solid #ddd;border-radius:10px;
-        min-width:150px;font-size:15px;">
-        <option>2 adulți</option>
-        <option>1 adult</option>
-        <option>3 adulți</option>
-        <option>4 adulți</option>
-      </select>
-
-      <button
-        style="padding:15px 25px;border:0;border-radius:10px;
-        background:#e6007e;color:white;font-weight:bold;
-        font-size:16px;cursor:pointer;">
-        🔍 Caută
-      </button>
-
-    </div>
-
-    <h3 style="margin-top:45px;color:#222;font-size:25px;">
-      Destinații populare
-    </h3>
-
-    <div style="display:grid;grid-template-columns:
-      repeat(auto-fit,minmax(230px,1fr));
-      gap:20px;margin-top:25px;">
-
-      <div style="background:white;border-radius:16px;
-        overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.08);">
-        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=800&q=80"
-          style="width:100%;height:170px;object-fit:cover;">
-        <div style="padding:18px;">
-          <h3>🇮🇹 Veneția</h3>
-          <p style="color:#666;">Italia</p>
-          <button style="background:#e6007e;color:white;border:0;
-            padding:11px 20px;border-radius:8px;font-weight:bold;">
-            Vezi hoteluri
-          </button>
-        </div>
-      </div>
-
-      <div style="background:white;border-radius:16px;
-        overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.08);">
-        <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80"
-          style="width:100%;height:170px;object-fit:cover;">
-        <div style="padding:18px;">
-          <h3>🇹🇷 Istanbul</h3>
-          <p style="color:#666;">Turcia</p>
-          <button style="background:#e6007e;color:white;border:0;
-            padding:11px 20px;border-radius:8px;font-weight:bold;">
-            Vezi hoteluri
-          </button>
-        </div>
-      </div>
-
-      <div style="background:white;border-radius:16px;
-        overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.08);">
-        <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?auto=format&fit=crop&w=800&q=80"
-          style="width:100%;height:170px;object-fit:cover;">
-        <div style="padding:18px;">
-          <h3>🇫🇷 Paris</h3>
-          <p style="color:#666;">Franța</p>
-          <button style="background:#e6007e;color:white;border:0;
-            padding:11px 20px;border-radius:8px;font-weight:bold;">
-            Vezi hoteluri
-          </button>
-        </div>
-      </div>
-
-    </div>
-
-    <p style="margin-top:30px;color:#888;font-size:14px;">
-      Hotelurile și prețurile reale vor fi afișate după conectarea sistemului Booking.com.
-    </p>
-
-  </div>
-</section>
-<!-- SFARSIT SECTIUNE HOTELURI -->
-
-<div class="search">
-
-<h2>🔎 Ce vacanță cauți?</h2>
-
-<div class="search-row">
-
-<input class="field" id="destination" placeholder="Destinație">
-
-<input class="field" id="date" placeholder="Când vrei să pleci?">
-
-<select class="field" id="people">
-<option>1 persoană</option>
-<option selected>2 persoane</option>
-<option>3 persoane</option>
-<option>4 persoane</option>
-<option>5+ persoane</option>
-</select>
-
-<button class="btn" onclick="searchVacation()">Caută</button>
-
-</div>
-
-</div>
-
+<!-- ================= OFERTE ================= -->
 
 <section id="oferte">
 
 <div class="wrap">
 
-<div class="eyebrow">Inspiră-te</div>
+<div class="eyebrow">
+Inspiră-te
+</div>
 
-<h2 class="section-title">Oferte și destinații populare</h2>
+<h2 class="section-title">
+Destinații populare
+</h2>
 
 <div class="offers">
+
 
 <div class="offer">
 
@@ -560,13 +540,19 @@ style="background-image:url('https://images.unsplash.com/photo-1530789253388-582
 
 <h3>🇹🇷 Antalya</h3>
 
-<p>Soare, mare și hoteluri all inclusive pentru o vacanță fără griji.</p>
+<p>
+Soare, mare și hoteluri all inclusive pentru o vacanță fără griji.
+</p>
 
-<div class="price">De la €399</div>
-
-<a class="btn" href="https://www.booking.com/" target="_blank">Vezi hoteluri</a>
+<a
+class="btn"
+href="https://www.booking.com/"
+target="_blank">
+Vezi hoteluri
+</a>
 
 </div>
+
 </div>
 
 
@@ -580,13 +566,19 @@ style="background-image:url('https://images.unsplash.com/photo-1504512485720-7d8
 
 <h3>🇬🇷 Grecia</h3>
 
-<p>Insule spectaculoase, plaje superbe și vacanțe pentru toate bugetele.</p>
+<p>
+Insule spectaculoase, plaje superbe și vacanțe pentru toate bugetele.
+</p>
 
-<div class="price">De la €329</div>
-
-<a class="btn" href="https://www.booking.com/" target="_blank">Vezi hoteluri</a>
+<a
+class="btn"
+href="https://www.booking.com/"
+target="_blank">
+Vezi hoteluri
+</a>
 
 </div>
+
 </div>
 
 
@@ -600,14 +592,99 @@ style="background-image:url('https://images.unsplash.com/photo-1533105079780-92b
 
 <h3>🇪🇸 Spania</h3>
 
-<p>Descoperă plajele și orașele spectaculoase ale Spaniei.</p>
+<p>
+Descoperă plajele și orașele spectaculoase ale Spaniei.
+</p>
 
-<div class="price">De la €299</div>
-
-<a class="btn" href="https://www.booking.com/" target="_blank">Vezi hoteluri</a>
+<a
+class="btn"
+href="https://www.booking.com/"
+target="_blank">
+Vezi hoteluri
+</a>
 
 </div>
+
 </div>
+
+
+<div class="offer">
+
+<div class="photo"
+style="background-image:url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1000&q=80');">
+</div>
+
+<div class="offer-body">
+
+<h3>🇮🇹 Veneția</h3>
+
+<p>
+Canale, romantism și experiențe memorabile în Italia.
+</p>
+
+<a
+class="btn"
+href="https://www.booking.com/"
+target="_blank">
+Vezi hoteluri
+</a>
+
+</div>
+
+</div>
+
+
+<div class="offer">
+
+<div class="photo"
+style="background-image:url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1000&q=80');">
+</div>
+
+<div class="offer-body">
+
+<h3>🇹🇷 Istanbul</h3>
+
+<p>
+Descoperă orașul dintre Europa și Asia.
+</p>
+
+<a
+class="btn"
+href="https://www.booking.com/"
+target="_blank">
+Vezi hoteluri
+</a>
+
+</div>
+
+</div>
+
+
+<div class="offer">
+
+<div class="photo"
+style="background-image:url('https://images.unsplash.com/photo-1503917988258-f87a78e3c995?auto=format&fit=crop&w=1000&q=80');">
+</div>
+
+<div class="offer-body">
+
+<h3>🇫🇷 Paris</h3>
+
+<p>
+City break perfect pentru o escapadă în doi.
+</p>
+
+<a
+class="btn"
+href="https://www.booking.com/"
+target="_blank">
+Vezi hoteluri
+</a>
+
+</div>
+
+</div>
+
 
 </div>
 
@@ -616,35 +693,46 @@ style="background-image:url('https://images.unsplash.com/photo-1533105079780-92b
 </section>
 
 
+<!-- ================= CATEGORII ================= -->
+
 <section class="categories" id="destinatii">
 
 <div class="wrap">
 
-<div class="eyebrow">Alege ce îți place</div>
+<div class="eyebrow">
+Alege ce îți place
+</div>
 
-<h2 class="section-title">Ce fel de vacanță vrei?</h2>
+<h2 class="section-title">
+Ce fel de vacanță vrei?
+</h2>
 
 <div class="category-grid">
+
 
 <div class="category">
 <div class="icon">🏖️</div>
 Vacanță la mare
 </div>
 
+
 <div class="category">
 <div class="icon">🏨</div>
 All Inclusive
 </div>
+
 
 <div class="category">
 <div class="icon">✈️</div>
 City Break
 </div>
 
+
 <div class="category">
 <div class="icon">❤️</div>
 Vacanță romantică
 </div>
+
 
 </div>
 
@@ -653,15 +741,22 @@ Vacanță romantică
 </section>
 
 
+<!-- ================= CUM FUNCTIONEAZA ================= -->
+
 <section id="cum">
 
 <div class="wrap">
 
-<div class="eyebrow">Simplu și rapid</div>
+<div class="eyebrow">
+Simplu și rapid
+</div>
 
-<h2 class="section-title">Cum funcționează?</h2>
+<h2 class="section-title">
+Cum funcționează?
+</h2>
 
 <div class="how">
+
 
 <div class="step">
 
@@ -670,7 +765,7 @@ Vacanță romantică
 <h3>Alegi destinația</h3>
 
 <p>
-Spune-ne unde vrei să mergi și când vrei să pleci.
+Introdu destinația și perioada în formularul de căutare.
 </p>
 
 </div>
@@ -683,7 +778,7 @@ Spune-ne unde vrei să mergi și când vrei să pleci.
 <h3>Compari ofertele</h3>
 
 <p>
-Descoperă hoteluri și variante de vacanță potrivite pentru tine.
+Vezi variantele disponibile pentru vacanța ta.
 </p>
 
 </div>
@@ -696,10 +791,11 @@ Descoperă hoteluri și variante de vacanță potrivite pentru tine.
 <h3>Rezervi</h3>
 
 <p>
-Alegi oferta și continui către partenerul de rezervare.
+Alegi hotelul potrivit și continui rezervarea.
 </p>
 
 </div>
+
 
 </div>
 
@@ -708,35 +804,42 @@ Alegi oferta și continui către partenerul de rezervare.
 </section>
 
 
-<section>
+<!-- ================= CTA ================= -->
 
-<div class="wrap">
+<section class="cta-section">
 
 <div class="cta">
 
-<h2>✈️ Găsește-ți următoarea vacanță</h2>
+<h2>
+✈️ Găsește-ți următoarea vacanță
+</h2>
 
 <p>
 VacantaRO.NL – creat pentru românii din Olanda.
 </p>
 
-<a class="white-btn" href="#oferte">
-Vezi ofertele
+<a
+class="white-btn"
+href="#"
+>
+Caută o vacanță
 </a>
-
-</div>
 
 </div>
 
 </section>
 
 
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
-<strong>✈️ VacantaRO.NL</strong>
+<strong>
+✈️ VacantaRO.NL
+</strong>
 
 <p>
-Vacanțe pentru românii din Olanda
+Vacanțe pentru românii din Olanda 🇷🇴 🇳🇱
 </p>
 
 <p>
@@ -745,46 +848,5 @@ Vacanțe pentru românii din Olanda
 
 </footer>
 
-
-<script>
-
-function searchVacation(){
-
-const destination =
-document.getElementById("destination").value;
-
-const people =
-document.getElementById("people").value;
-
-if(destination.trim()===""){
-
-alert("Scrie mai întâi destinația dorită 😊");
-
-return;
-
-}
-
-alert(
-"Am căutat vacanțe pentru " +
-destination +
-" – " +
-people +
-". În curând vom adăuga și rezultatele automate!"
-);
-
-document.getElementById("oferte")
-.scrollIntoView({behavior:"smooth"});
-
-}
-
-</script>
-<script src="https://www.booking.com/affiliate/prelanding_sdk"></script>
-  
-  <div id="bookingAffiliateWidget_9afaba33-a14f-401d-bfb3-83611e96d760">&nbsp;</div>
-  
-  <script>
-      (function () {
-          var BookingAffiliateWidget = new Booking.AffiliateWidget({
-  "
 </body>
 </html>
