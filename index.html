@@ -11,464 +11,696 @@
 <style>
 
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f5f7fb;
-    color:#142744;
+font-family:Arial,Helvetica,sans-serif;
+background:#f5f8fc;
+color:#102746;
 }
 
 a{
-    text-decoration:none;
-    color:inherit;
+text-decoration:none;
+color:inherit;
 }
+
+img{
+max-width:100%;
+display:block;
+}
+
+:root{
+--navy:#071b35;
+--blue:#0878f9;
+--cyan:#20c6ff;
+--yellow:#ffd22e;
+--red:#f12f3d;
+--muted:#667085;
+--white:#fff;
+}
+
 
 /* ================= HEADER ================= */
 
 header{
-    height:78px;
-    background:#071b35;
-    color:white;
-    position:relative;
-    z-index:100;
+height:78px;
+background:var(--navy);
+color:#fff;
+position:relative;
+z-index:1000;
 }
 
 nav{
-    max-width:1180px;
-    height:78px;
-    margin:auto;
-    padding:0 25px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+max-width:1180px;
+height:78px;
+margin:auto;
+padding:0 24px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
 .logo{
-    font-size:29px;
-    font-weight:900;
-    letter-spacing:-1px;
+font-size:28px;
+font-weight:900;
+letter-spacing:-1px;
 }
 
 .logo span{
-    color:#20c6ff;
+color:var(--cyan);
 }
 
 .navlinks{
-    display:flex;
-    gap:34px;
-    font-weight:bold;
-    font-size:16px;
-}
-
-.navlinks a{
-    padding:28px 0;
+display:flex;
+align-items:center;
+gap:30px;
+font-weight:700;
 }
 
 .navlinks a:hover{
-    color:#20c6ff;
+color:var(--cyan);
 }
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:16px;
+margin-left:25px;
+}
+
+.lang{
+font-size:14px;
+}
+
 
 /* ================= HERO ================= */
 
 .hero{
-    min-height:760px;
-    position:relative;
-    color:white;
+min-height:640px;
+position:relative;
+color:#fff;
 
-    background:
-    linear-gradient(
-        90deg,
-        rgba(3,27,55,.78),
-        rgba(3,27,55,.20)
-    ),
-    url("https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=2000&q=90");
+background:
+linear-gradient(
+90deg,
+rgba(3,24,50,.82),
+rgba(3,24,50,.18)
+),
+url("https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=2200&q=90");
 
-    background-size:cover;
-    background-position:center;
+background-size:cover;
+background-position:center;
 }
 
 .hero-content{
-    max-width:1180px;
-    margin:auto;
-    padding:390px 25px 80px;
+max-width:1180px;
+margin:auto;
+padding:80px 24px 250px;
 }
 
 .badge{
-    display:inline-block;
-    background:#20c6ff;
-    color:#071b35;
-    padding:10px 18px;
-    border-radius:30px;
-    font-weight:bold;
-    margin-bottom:20px;
+display:inline-block;
+padding:9px 16px;
+border-radius:30px;
+background:var(--cyan);
+color:var(--navy);
+font-weight:800;
+margin-bottom:18px;
 }
 
 .hero h1{
-    font-size:62px;
-    line-height:1.03;
-    max-width:760px;
-    margin-bottom:22px;
-    text-shadow:0 3px 15px rgba(0,0,0,.25);
+max-width:620px;
+font-size:58px;
+line-height:1.03;
+margin-bottom:18px;
 }
 
 .hero h1 span{
-    color:#20c6ff;
+color:var(--cyan);
 }
 
 .hero p{
-    font-size:21px;
-    line-height:1.5;
-    max-width:650px;
-    color:#f5fbff;
+max-width:570px;
+font-size:20px;
+line-height:1.5;
 }
 
 .hero-btn{
-    display:inline-block;
-    margin-top:27px;
-    background:#079cff;
-    color:white;
-    padding:16px 30px;
-    border-radius:30px;
-    font-size:17px;
-    font-weight:bold;
-    box-shadow:0 8px 25px rgba(0,0,0,.20);
+display:inline-block;
+margin-top:25px;
+padding:14px 25px;
+border-radius:30px;
+background:#079cff;
+color:#fff;
+font-weight:800;
 }
 
-.hero-btn:hover{
-    background:#007dd0;
-}
 
 /* ================= BOOKING ================= */
 
 .booking-area{
-    position:absolute;
-    z-index:50;
-    top:103px;
-    left:50%;
-    transform:translateX(-50%);
+position:absolute;
+z-index:20;
+top:225px;
+left:50%;
+transform:translateX(-50%);
 
-    width:min(1140px,calc(100% - 70px));
+width:min(1140px,calc(100% - 70px));
 
-    background:rgba(255,255,255,.97);
+padding:18px;
 
-    padding:18px 18px 20px;
+border-radius:12px;
 
-    border-radius:10px;
+background:rgba(255,255,255,.97);
 
-    box-shadow:
-    0 15px 45px rgba(0,0,0,.25);
+box-shadow:
+0 16px 45px rgba(0,0,0,.25);
 }
 
 .booking-title{
-    text-align:center;
-    margin-bottom:10px;
+text-align:center;
+margin-bottom:10px;
 }
 
 .booking-title h2{
-    font-size:31px;
-    color:#142744;
-    margin-bottom:5px;
+font-size:30px;
+margin-bottom:4px;
+color:#142744;
 }
 
 .booking-title p{
-    color:#667085;
-    font-size:16px;
+font-size:15px;
+color:var(--muted);
 }
+
 
 /* ================= SECTIONS ================= */
 
 .wrap{
-    max-width:1180px;
-    margin:auto;
-    padding:75px 25px;
+max-width:1180px;
+margin:auto;
+padding:55px 24px;
+}
+
+.section-head{
+display:flex;
+justify-content:space-between;
+align-items:end;
+gap:20px;
+margin-bottom:24px;
 }
 
 .eyebrow{
-    color:#0878f9;
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    margin-bottom:8px;
+color:var(--blue);
+font-weight:900;
+text-transform:uppercase;
+letter-spacing:.8px;
+margin-bottom:5px;
 }
 
 .section-title{
-    font-size:38px;
-    margin-bottom:32px;
+font-size:35px;
 }
+
+.section-subtitle{
+color:var(--muted);
+margin-top:4px;
+}
+
+.outline-btn{
+white-space:nowrap;
+border:1.5px solid var(--blue);
+color:var(--blue);
+padding:10px 16px;
+border-radius:24px;
+font-weight:800;
+}
+
+
+/* ================= OFERTE ================= */
+
+.deals{
+background:#f5f8fc;
+}
+
+.deal-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:14px;
+}
+
+.deal-card{
+background:#fff;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(16,39,70,.09);
+border:1px solid #e9eef5;
+}
+
+.deal-image{
+height:175px;
+position:relative;
+background-size:cover;
+background-position:center;
+}
+
+.discount{
+position:absolute;
+top:12px;
+right:12px;
+background:var(--red);
+color:#fff;
+padding:8px 11px;
+border-radius:20px;
+font-weight:900;
+font-size:13px;
+}
+
+.deal-body{
+padding:14px;
+}
+
+.deal-title{
+font-size:18px;
+margin-bottom:6px;
+}
+
+.stars{
+color:#ffb800;
+font-size:13px;
+margin-bottom:10px;
+}
+
+.meta{
+display:flex;
+justify-content:space-between;
+gap:6px;
+color:#4f6075;
+font-size:13px;
+margin-bottom:12px;
+}
+
+.price-row{
+display:flex;
+align-items:baseline;
+gap:8px;
+margin-bottom:11px;
+}
+
+.price-note{
+font-size:14px;
+color:#e51e2b;
+font-weight:800;
+}
+
+.deal-btn{
+display:block;
+text-align:center;
+background:var(--yellow);
+color:#111;
+padding:10px;
+border-radius:9px;
+font-weight:900;
+}
+
 
 /* ================= DESTINATII ================= */
 
-.offers{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:24px;
+.dest-grid{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:12px;
 }
 
-.offer{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-    transition:.25s;
+.dest-card{
+height:175px;
+border-radius:14px;
+overflow:hidden;
+position:relative;
+color:#fff;
+
+background-size:cover;
+background-position:center;
+
+box-shadow:0 5px 16px rgba(0,0,0,.12);
 }
 
-.offer:hover{
-    transform:translateY(-5px);
+.dest-card:after{
+content:"";
+position:absolute;
+inset:0;
+
+background:
+linear-gradient(
+transparent 35%,
+rgba(0,0,0,.75)
+);
 }
 
-.photo{
-    height:220px;
-    background-size:cover;
-    background-position:center;
+.dest-text{
+position:absolute;
+z-index:2;
+left:12px;
+right:10px;
+bottom:12px;
 }
 
-.offer-body{
-    padding:22px;
+.dest-text strong{
+font-size:18px;
+display:block;
+margin-bottom:4px;
 }
 
-.offer h3{
-    font-size:23px;
-    margin-bottom:10px;
+.dest-text span{
+font-size:13px;
+line-height:1.25;
 }
 
-.offer p{
-    color:#657084;
-    line-height:1.5;
-    margin-bottom:18px;
+
+/* ================= TIPURI ================= */
+
+.types{
+background:#eef7ff;
 }
 
-.btn{
-    display:inline-block;
-    border:0;
-    border-radius:12px;
-    padding:13px 20px;
-    background:#0878f9;
-    color:white;
-    font-weight:bold;
+.type-grid{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:12px;
 }
 
-.btn:hover{
-    background:#055dc2;
+.type{
+background:#fff;
+border-radius:13px;
+padding:22px 10px;
+text-align:center;
+font-weight:800;
+box-shadow:0 4px 15px rgba(16,39,70,.05);
 }
 
-/* ================= CATEGORII ================= */
-
-.categories{
-    background:#eaf5ff;
+.type-icon{
+font-size:32px;
+margin-bottom:8px;
 }
 
-.category-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
+
+/* ================= DE CE ================= */
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:14px;
 }
 
-.category{
-    background:white;
-    padding:30px 20px;
-    text-align:center;
-    border-radius:18px;
-    font-size:18px;
-    font-weight:bold;
-    box-shadow:0 5px 18px rgba(0,0,0,.06);
+.why{
+background:#fff;
+border:1px solid #e5ebf3;
+border-radius:14px;
+padding:20px;
+box-shadow:0 4px 15px rgba(16,39,70,.05);
 }
 
-.icon{
-    font-size:42px;
-    margin-bottom:13px;
+.why-icon{
+font-size:28px;
+margin-bottom:10px;
 }
 
-/* ================= CUM FUNCTIONEAZA ================= */
-
-.how{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
+.why strong{
+display:block;
+margin-bottom:6px;
 }
 
-.step{
-    background:white;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 5px 20px rgba(0,0,0,.07);
+.why p{
+font-size:13px;
+color:var(--muted);
+line-height:1.4;
 }
 
-.num{
-    width:45px;
-    height:45px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:#0878f9;
-    color:white;
-    border-radius:50%;
-    font-weight:bold;
-    margin-bottom:18px;
-}
-
-.step h3{
-    margin-bottom:12px;
-}
-
-.step p{
-    color:#657084;
-    line-height:1.5;
-}
 
 /* ================= CTA ================= */
 
-.cta-section{
-    padding:30px 20px 75px;
+.cta-wrap{
+padding:15px 24px 55px;
 }
 
 .cta{
-    max-width:1140px;
-    margin:auto;
-    background:linear-gradient(135deg,#0878f9,#19c6ff);
-    color:white;
-    border-radius:25px;
-    padding:55px;
-    text-align:center;
+max-width:1180px;
+margin:auto;
+min-height:135px;
+
+border-radius:18px;
+padding:28px 35px;
+
+color:#fff;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+gap:25px;
+
+background:
+linear-gradient(
+90deg,
+rgba(4,31,61,.83),
+rgba(4,31,61,.28)
+),
+url("https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1600&q=85");
+
+background-size:cover;
+background-position:center;
 }
 
 .cta h2{
-    font-size:38px;
-    margin-bottom:15px;
+font-size:29px;
 }
 
 .cta p{
-    font-size:18px;
-    margin-bottom:25px;
+margin-top:5px;
 }
 
-.white-btn{
-    display:inline-block;
-    background:white;
-    color:#0878f9;
-    padding:15px 25px;
-    border-radius:12px;
-    font-weight:bold;
+.cta-btn{
+background:var(--yellow);
+color:#111;
+padding:14px 23px;
+border-radius:28px;
+font-weight:900;
+white-space:nowrap;
 }
+
 
 /* ================= FOOTER ================= */
 
 footer{
-    background:#071b35;
-    color:#b9c8d9;
-    padding:45px 20px;
-    text-align:center;
+background:var(--navy);
+color:#b9c8d9;
+padding:35px 24px;
+}
+
+.footer-inner{
+max-width:1180px;
+margin:auto;
+
+display:flex;
+justify-content:space-between;
+
+gap:30px;
 }
 
 footer strong{
-    color:white;
-    font-size:23px;
+color:#fff;
+font-size:22px;
 }
 
-footer p{
-    margin-top:12px;
+.footer-links{
+display:flex;
+gap:20px;
+font-size:14px;
 }
 
-/* ================= MOBILE ================= */
+.copyright{
+text-align:center;
+margin-top:28px;
+font-size:12px;
+}
 
-@media(max-width:850px){
 
-    header{
-        height:65px;
-    }
+/* ================= TABLET ================= */
 
-    nav{
-        height:65px;
-        padding:0 18px;
-    }
+@media(max-width:900px){
 
-    .logo{
-        font-size:22px;
-    }
+.navlinks{
+display:none;
+}
 
-    .navlinks{
-        display:none;
-    }
+.nav-right{
+margin-left:auto;
+}
 
-    .booking-area{
-        position:relative;
-        top:auto;
-        left:auto;
-        transform:none;
+.logo{
+font-size:23px;
+}
 
-        width:100%;
+.hero{
+min-height:590px;
+}
 
-        border-radius:0;
+.hero-content{
+padding:55px 20px 70px;
+}
 
-        padding:20px 8px 25px;
+.hero h1{
+font-size:42px;
+}
 
-        box-shadow:none;
-    }
+.booking-area{
+position:relative;
+top:auto;
+left:auto;
+transform:none;
 
-    .booking-title h2{
-        font-size:26px;
-        text-align:left;
-        padding-left:10px;
-    }
+width:100%;
 
-    .booking-title p{
-        text-align:left;
-        padding:0 10px;
-        line-height:1.4;
-    }
+border-radius:0;
 
-    .hero{
-        min-height:560px;
-    }
+box-shadow:none;
 
-    .hero-content{
-        padding:80px 20px 70px;
-    }
+padding:18px 8px;
+}
 
-    .hero h1{
-        font-size:42px;
-    }
+.deal-grid{
+grid-template-columns:1fr 1fr;
+}
 
-    .hero p{
-        font-size:17px;
-    }
+.dest-grid{
+grid-template-columns:repeat(3,1fr);
+}
 
-    .offers{
-        grid-template-columns:1fr;
-    }
+.type-grid{
+grid-template-columns:repeat(3,1fr);
+}
 
-    .category-grid{
-        grid-template-columns:1fr 1fr;
-    }
+.why-grid{
+grid-template-columns:1fr 1fr;
+}
 
-    .how{
-        grid-template-columns:1fr;
-    }
+.cta{
+flex-direction:column;
+align-items:flex-start;
+}
 
-    .section-title{
-        font-size:30px;
-    }
+}
 
-    .cta{
-        padding:35px 20px;
-    }
 
-    .cta h2{
-        font-size:30px;
-    }
+/* ================= TELEFON ================= */
+
+@media(max-width:560px){
+
+header,
+nav{
+height:65px;
+}
+
+nav{
+padding:0 16px;
+}
+
+.lang{
+display:none;
+}
+
+.hero{
+min-height:530px;
+}
+
+.hero-content{
+padding:45px 18px 60px;
+}
+
+.hero h1{
+font-size:39px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.booking-title h2{
+font-size:25px;
+text-align:left;
+padding-left:8px;
+}
+
+.booking-title p{
+text-align:left;
+padding:0 8px;
+line-height:1.4;
+}
+
+.section-head{
+align-items:flex-start;
+flex-direction:column;
+}
+
+.section-title{
+font-size:29px;
+}
+
+.deal-grid{
+grid-template-columns:1fr;
+}
+
+.dest-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.type-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.why-grid{
+grid-template-columns:1fr;
+}
+
+.wrap{
+padding:42px 16px;
+}
+
+.cta-wrap{
+padding:8px 16px 40px;
+}
+
+.cta{
+padding:25px;
+}
+
+.cta h2{
+font-size:25px;
+}
+
+.footer-inner{
+flex-direction:column;
+}
+
+.footer-links{
+flex-wrap:wrap;
+}
+
 }
 
 </style>
 </head>
 
+
 <body>
+
 
 <!-- ================= HEADER ================= -->
 
@@ -482,11 +714,35 @@ footer p{
 
 <div class="navlinks">
 
-<a href="#oferte">Oferte</a>
+<a href="#">
+Acasă
+</a>
 
-<a href="#destinatii">Destinații</a>
+<a href="#destinatii">
+Destinații
+</a>
 
-<a href="#cum">Cum funcționează</a>
+<a href="#oferte">
+Oferte
+</a>
+
+<a href="#tipuri">
+Tipuri de vacanță
+</a>
+
+<a href="#cum">
+Cum funcționează
+</a>
+
+</div>
+
+<div class="nav-right">
+
+<span>♡</span>
+
+<span class="lang">
+🇳🇱 NL⌄
+</span>
 
 </div>
 
@@ -495,13 +751,49 @@ footer p{
 </header>
 
 
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+🇷🇴 Pentru românii din Olanda 🇳🇱
+</div>
+
+<h1>
+Următoarea ta
+<span>vacanță</span>
+începe aici.
+</h1>
+
+<p>
+Descoperă hoteluri, zboruri și idei de vacanță
+pentru românii din Olanda.
+</p>
+
+<a
+class="hero-btn"
+href="#oferte">
+
+Vezi oferte →
+
+</a>
+
+</div>
+
+</section>
+
+
 <!-- ================= BOOKING REAL ================= -->
 
 <section class="booking-area">
 
 <div class="booking-title">
 
-<h2>🏨 Căutați-vă următorul sejur</h2>
+<h2>
+🏨 Căutați-vă următorul sejur
+</h2>
 
 <p>
 Alegeți dintre milioane de locuințe, hoteluri și alte tipuri de proprietăți din toată lumea
@@ -511,6 +803,7 @@ Alegeți dintre milioane de locuințe, hoteluri și alte tipuri de proprietăți
 
 
 <script src="https://www.booking.com/affiliate/prelanding_sdk"></script>
+
 
 <div id="bookingAffiliateWidget_9afaba33-a14f-401d-bfb3-83611e96d760">
 &nbsp;
@@ -555,35 +848,308 @@ border="0"
 alt=""
 >
 
-
 </section>
 
 
-<!-- ================= HERO ================= -->
+<!-- ================= OFERTE ================= -->
 
-<section class="hero">
+<section
+class="deals"
+id="oferte">
 
-<div class="hero-content">
+<div class="wrap">
 
-<div class="badge">
-🇷🇴 Pentru românii din Olanda 🇳🇱
+
+<div class="section-head">
+
+<div>
+
+<div class="eyebrow">
+🔥 Ofertele săptămânii
 </div>
 
-<h1>
-Următoarea ta
-<span>vacanță</span>
-începe aici.
-</h1>
+<h2 class="section-title">
+Cele mai bune prețuri pentru vacanțe de neuitat
+</h2>
 
-<p>
-Descoperă hoteluri, zboruri și idei de vacanță
-pentru românii din Olanda.
-Căutăm inspirația, tu alegi destinația.
+<p class="section-subtitle">
+Prețurile și disponibilitatea se verifică pe Booking.com.
 </p>
 
-<a class="hero-btn" href="#oferte">
-Vezi oferte&nbsp; →
+</div>
+
+
+<a
+class="outline-btn"
+href="#oferte">
+
+Vezi toate ofertele →
+
 </a>
+
+</div>
+
+
+<div class="deal-grid">
+
+
+<!-- ANTALYA -->
+
+<article class="deal-card">
+
+<div
+class="deal-image"
+style="
+background-image:url('https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=900&q=85')
+">
+
+<span class="discount">
+OFERTĂ
+</span>
+
+</div>
+
+
+<div class="deal-body">
+
+<h3 class="deal-title">
+🇹🇷 Antalya, Turcia
+</h3>
+
+<div class="stars">
+★★★★★
+<span style="color:#667085">
+Hoteluri & resorturi
+</span>
+</div>
+
+<div class="meta">
+
+<span>
+✈️ 7 nopți
+</span>
+
+<span>
+🏨 All Inclusive
+</span>
+
+</div>
+
+<div class="price-row">
+
+<span class="price-note">
+Vezi prețul
+</span>
+
+</div>
+
+<a
+class="deal-btn"
+href="https://www.booking.com/"
+target="_blank">
+
+Vezi oferta →
+
+</a>
+
+</div>
+
+</article>
+
+
+<!-- CRETA -->
+
+<article class="deal-card">
+
+<div
+class="deal-image"
+style="
+background-image:url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=900&q=85')
+">
+
+<span class="discount">
+OFERTĂ
+</span>
+
+</div>
+
+
+<div class="deal-body">
+
+<h3 class="deal-title">
+🇬🇷 Creta, Grecia
+</h3>
+
+<div class="stars">
+★★★★★
+<span style="color:#667085">
+Hoteluri
+</span>
+</div>
+
+<div class="meta">
+
+<span>
+✈️ 7 nopți
+</span>
+
+<span>
+🏖️ Plajă
+</span>
+
+</div>
+
+<div class="price-row">
+
+<span class="price-note">
+Vezi prețul
+</span>
+
+</div>
+
+<a
+class="deal-btn"
+href="https://www.booking.com/"
+target="_blank">
+
+Vezi oferta →
+
+</a>
+
+</div>
+
+</article>
+
+
+<!-- BARCELONA -->
+
+<article class="deal-card">
+
+<div
+class="deal-image"
+style="
+background-image:url('https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=900&q=85')
+">
+
+<span class="discount">
+OFERTĂ
+</span>
+
+</div>
+
+
+<div class="deal-body">
+
+<h3 class="deal-title">
+🇪🇸 Barcelona, Spania
+</h3>
+
+<div class="stars">
+★★★★★
+<span style="color:#667085">
+Hoteluri
+</span>
+</div>
+
+<div class="meta">
+
+<span>
+✈️ City break
+</span>
+
+<span>
+☀️ Plajă
+</span>
+
+</div>
+
+<div class="price-row">
+
+<span class="price-note">
+Vezi prețul
+</span>
+
+</div>
+
+<a
+class="deal-btn"
+href="https://www.booking.com/"
+target="_blank">
+
+Vezi oferta →
+
+</a>
+
+</div>
+
+</article>
+
+
+<!-- ROMA -->
+
+<article class="deal-card">
+
+<div
+class="deal-image"
+style="
+background-image:url('https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=900&q=85')
+">
+
+<span class="discount">
+OFERTĂ
+</span>
+
+</div>
+
+
+<div class="deal-body">
+
+<h3 class="deal-title">
+🇮🇹 Roma, Italia
+</h3>
+
+<div class="stars">
+★★★★★
+<span style="color:#667085">
+Hoteluri
+</span>
+</div>
+
+<div class="meta">
+
+<span>
+✈️ City break
+</span>
+
+<span>
+🍝 Gastronomie
+</span>
+
+</div>
+
+<div class="price-row">
+
+<span class="price-note">
+Vezi prețul
+</span>
+
+</div>
+
+<a
+class="deal-btn"
+href="https://www.booking.com/"
+target="_blank">
+
+Vezi oferta →
+
+</a>
+
+</div>
+
+</article>
+
+
+</div>
 
 </div>
 
@@ -592,169 +1158,186 @@ Vezi oferte&nbsp; →
 
 <!-- ================= DESTINATII ================= -->
 
-<section id="oferte">
+<section id="destinatii">
 
 <div class="wrap">
 
+
+<div class="section-head">
+
+<div>
+
 <div class="eyebrow">
-DESTINAȚII POPULARE
+📍 Destinații populare
 </div>
 
 <h2 class="section-title">
-Inspirație pentru următoarea vacanță
+Inspiră-te din cele mai căutate destinații
 </h2>
 
-<div class="offers">
-
-
-<div class="offer">
-
-<div class="photo"
-style="background-image:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1000&q=85');">
-</div>
-
-<div class="offer-body">
-
-<h3>🇹🇷 Antalya</h3>
-
-<p>
-Soare, plaje și hoteluri all inclusive.
+<p class="section-subtitle">
+Idei de vacanță pentru românii din Olanda.
 </p>
 
-<a class="btn"
-href="https://www.booking.com/"
-target="_blank">
-Vezi hoteluri
+</div>
+
+
+<a
+class="outline-btn"
+href="#destinatii">
+
+Vezi toate destinațiile →
+
 </a>
 
 </div>
 
-</div>
+
+<div class="dest-grid">
 
 
-<div class="offer">
-
-<div class="photo"
-style="background-image:url('https://images.unsplash.com/photo-1504512485720-7d83a16ee930?auto=format&fit=crop&w=1000&q=85');">
-</div>
-
-<div class="offer-body">
-
-<h3>🇬🇷 Grecia</h3>
-
-<p>
-Insule spectaculoase și peisaje de vis.
-</p>
-
-<a class="btn"
+<a
+class="dest-card"
 href="https://www.booking.com/"
-target="_blank">
-Vezi hoteluri
+target="_blank"
+
+style="
+background-image:url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=700&q=85')
+">
+
+<div class="dest-text">
+
+<strong>
+Antalya
+</strong>
+
+<span>
+Plaje superbe și hoteluri all inclusive
+</span>
+
+</div>
+
 </a>
 
-</div>
 
-</div>
-
-
-<div class="offer">
-
-<div class="photo"
-style="background-image:url('https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1000&q=85');">
-</div>
-
-<div class="offer-body">
-
-<h3>🇪🇸 Spania</h3>
-
-<p>
-Plaje, orașe vibrante și multă cultură.
-</p>
-
-<a class="btn"
+<a
+class="dest-card"
 href="https://www.booking.com/"
-target="_blank">
-Vezi hoteluri
+target="_blank"
+
+style="
+background-image:url('https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?auto=format&fit=crop&w=700&q=85')
+">
+
+<div class="dest-text">
+
+<strong>
+Grecia
+</strong>
+
+<span>
+Insule spectaculoase și peisaje de vis
+</span>
+
+</div>
+
 </a>
 
-</div>
 
-</div>
-
-
-<div class="offer">
-
-<div class="photo"
-style="background-image:url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1000&q=85');">
-</div>
-
-<div class="offer-body">
-
-<h3>🇮🇹 Italia</h3>
-
-<p>
-Artă, istorie și orașe romantice.
-</p>
-
-<a class="btn"
+<a
+class="dest-card"
 href="https://www.booking.com/"
-target="_blank">
-Vezi hoteluri
+target="_blank"
+
+style="
+background-image:url('https://images.unsplash.com/photo-1507501336603-6e31b6d1f4c2?auto=format&fit=crop&w=700&q=85')
+">
+
+<div class="dest-text">
+
+<strong>
+Spania
+</strong>
+
+<span>
+Soare, cultură și orașe vibrante
+</span>
+
+</div>
+
 </a>
 
-</div>
 
-</div>
-
-
-<div class="offer">
-
-<div class="photo"
-style="background-image:url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1000&q=85');">
-</div>
-
-<div class="offer-body">
-
-<h3>🇹🇷 Turcia</h3>
-
-<p>
-Orașe fascinante și experiențe unice.
-</p>
-
-<a class="btn"
+<a
+class="dest-card"
 href="https://www.booking.com/"
-target="_blank">
-Vezi hoteluri
+target="_blank"
+
+style="
+background-image:url('https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=700&q=85')
+">
+
+<div class="dest-text">
+
+<strong>
+Italia
+</strong>
+
+<span>
+Artă, istorie și gastronomie
+</span>
+
+</div>
+
 </a>
 
-</div>
 
-</div>
-
-
-<div class="offer">
-
-<div class="photo"
-style="background-image:url('https://images.unsplash.com/photo-1503917988258-f87a78e3c995?auto=format&fit=crop&w=1000&q=85');">
-</div>
-
-<div class="offer-body">
-
-<h3>🇫🇷 Paris</h3>
-
-<p>
-City break perfect pentru o escapadă în doi.
-</p>
-
-<a class="btn"
+<a
+class="dest-card"
 href="https://www.booking.com/"
-target="_blank">
-Vezi hoteluri
+target="_blank"
+
+style="
+background-image:url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=700&q=85')
+">
+
+<div class="dest-text">
+
+<strong>
+Turcia
+</strong>
+
+<span>
+Orașe fascinante și experiențe unice
+</span>
+
+</div>
+
 </a>
 
-</div>
+
+<a
+class="dest-card"
+href="https://www.booking.com/"
+target="_blank"
+
+style="
+background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=700&q=85')
+">
+
+<div class="dest-text">
+
+<strong>
+Paris
+</strong>
+
+<span>
+City break perfect pentru o escapadă
+</span>
 
 </div>
+
+</a>
 
 
 </div>
@@ -764,41 +1347,92 @@ Vezi hoteluri
 </section>
 
 
-<!-- ================= CATEGORII ================= -->
+<!-- ================= TIPURI DE VACANTA ================= -->
 
-<section class="categories" id="destinatii">
+<section
+class="types"
+id="tipuri">
 
 <div class="wrap">
 
+
 <div class="eyebrow">
-ALEGE CE ÎȚI PLACE
+😎 Tipuri de vacanță
 </div>
 
 <h2 class="section-title">
-Ce fel de vacanță vrei?
+Alege stilul de vacanță care ți se potrivește.
 </h2>
 
-<div class="category-grid">
 
-<div class="category">
-<div class="icon">🏖️</div>
+<div class="type-grid">
+
+
+<div class="type">
+
+<div class="type-icon">
+🏖️
+</div>
+
 Vacanță la mare
+
 </div>
 
-<div class="category">
-<div class="icon">🏨</div>
+
+<div class="type">
+
+<div class="type-icon">
+🏨
+</div>
+
 All Inclusive
+
 </div>
 
-<div class="category">
-<div class="icon">✈️</div>
+
+<div class="type">
+
+<div class="type-icon">
+✈️
+</div>
+
 City Break
+
 </div>
 
-<div class="category">
-<div class="icon">❤️</div>
-Vacanță romantică
+
+<div class="type">
+
+<div class="type-icon">
+💙
 </div>
+
+Vacanță romantică
+
+</div>
+
+
+<div class="type">
+
+<div class="type-icon">
+👨‍👩‍👧‍👦
+</div>
+
+Vacanță cu familia
+
+</div>
+
+
+<div class="type">
+
+<div class="type-icon">
+🏔️
+</div>
+
+Vacanță în natură
+
+</div>
+
 
 </div>
 
@@ -807,59 +1441,92 @@ Vacanță romantică
 </section>
 
 
-<!-- ================= CUM FUNCTIONEAZA ================= -->
+<!-- ================= DE CE VACANTARO ================= -->
 
 <section id="cum">
 
 <div class="wrap">
 
+
 <div class="eyebrow">
-SIMPLU ȘI RAPID
+💚 De ce VacantaRO.NL?
 </div>
 
 <h2 class="section-title">
-Cum funcționează?
+Călătorește simplu, sigur și fără griji.
 </h2>
 
-<div class="how">
 
-<div class="step">
+<div class="why-grid">
 
-<div class="num">01</div>
 
-<h3>Alegi destinația</h3>
+<div class="why">
+
+<div class="why-icon">
+🎁
+</div>
+
+<strong>
+Cele mai bune oferte
+</strong>
 
 <p>
-Introdu destinația și perioada în formularul Booking.
+Descoperă rapid variante și oferte disponibile prin Booking.com.
 </p>
 
 </div>
 
 
-<div class="step">
+<div class="why">
 
-<div class="num">02</div>
+<div class="why-icon">
+🔒
+</div>
 
-<h3>Compari ofertele</h3>
+<strong>
+Rezervare sigură
+</strong>
 
 <p>
-Vezi variantele disponibile pentru vacanța ta.
+Rezervarea este continuată pe platforma Booking.com.
 </p>
 
 </div>
 
 
-<div class="step">
+<div class="why">
 
-<div class="num">03</div>
+<div class="why-icon">
+🎧
+</div>
 
-<h3>Rezervi</h3>
+<strong>
+Conținut în limba română
+</strong>
 
 <p>
-Alegi cazarea și continui rezervarea pe Booking.com.
+Informații și inspirație create pentru românii din Olanda.
 </p>
 
 </div>
+
+
+<div class="why">
+
+<div class="why-icon">
+👍
+</div>
+
+<strong>
+Milioane de cazări
+</strong>
+
+<p>
+Hoteluri, apartamente și multe alte tipuri de proprietăți.
+</p>
+
+</div>
+
 
 </div>
 
@@ -870,9 +1537,12 @@ Alegi cazarea și continui rezervarea pe Booking.com.
 
 <!-- ================= CTA ================= -->
 
-<section class="cta-section">
+<section class="cta-wrap">
 
 <div class="cta">
+
+
+<div>
 
 <h2>
 ✈️ Găsește-ți următoarea vacanță
@@ -882,9 +1552,17 @@ Alegi cazarea și continui rezervarea pe Booking.com.
 VacantaRO.NL – creat pentru românii din Olanda.
 </p>
 
-<a class="white-btn" href="#">
-Caută o vacanță
+</div>
+
+
+<a
+class="cta-btn"
+href="#bookingAffiliateWidget_9afaba33-a14f-401d-bfb3-83611e96d760">
+
+Caută o vacanță →
+
 </a>
+
 
 </div>
 
@@ -895,19 +1573,59 @@ Caută o vacanță
 
 <footer>
 
+<div class="footer-inner">
+
+
+<div>
+
 <strong>
 ✈️ VacantaRO.NL
 </strong>
 
-<p>
+<p style="margin-top:8px">
 Vacanțe pentru românii din Olanda 🇷🇴 🇳🇱
 </p>
 
-<p>
-© 2026 VacantaRO.NL
-</p>
+</div>
+
+
+<div class="footer-links">
+
+<a href="#">
+Acasă
+</a>
+
+<a href="#destinatii">
+Destinații
+</a>
+
+<a href="#oferte">
+Oferte
+</a>
+
+<a href="#tipuri">
+Tipuri de vacanță
+</a>
+
+<a href="#cum">
+Cum funcționează
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 VacantaRO.NL. Toate drepturile rezervate.
+
+</div>
+
 
 </footer>
+
 
 </body>
 </html>
